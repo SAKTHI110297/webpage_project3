@@ -1,0 +1,615 @@
+h1,
+h2,
+h6,
+h3,
+h4,
+h5,
+p,
+li,
+div,
+section,
+span,
+form,
+input,
+select,
+button,
+strong,
+ul,
+ol,
+img,
+a,
+header,
+footer,
+body,
+html,
+nav {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    line-height: 0;
+    border: 0;
+    font-family: zoho_puvi;
+    text-size-adjust: 100%;
+}
+
+li,
+ul,
+ol {
+    list-style: none;
+    cursor: pointer;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+    cursor: pointer;
+}
+
+@font-face {
+    font-family: zoho_puvi;
+    src: url('../fonts/zoho_puvi_light.eot');
+    font-weight: 100;
+}
+
+@font-face {
+    font-family: zoho_puvi;
+    src: url('../fonts/zoho_puvi_light\ 1.otf');
+    font-weight: 200;
+}
+
+@font-face {
+    font-family: zoho_puvi;
+    src: url('../fonts/Zoho_Puvi_Regular.woff2');
+    font-weight: 300;
+}
+
+@font-face {
+    font-family: zoho_puvi;
+    src: url('../fonts/zoho_puvi_regular_italic.eot');
+    font-weight: 300;
+}
+
+@font-face {
+    font-family: zoho_puvi;
+    src: url('../fonts/zoho_puvi_medium.woff2');
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: zoho_puvi;
+    src: url('../fonts/Zoho_Puvi_Semibold.woff2');
+    font-weight: 500;
+}
+
+@font-face {
+    font-family: zoho_puvi;
+    src: url('../fonts/Zoho_Puvi_Bold.woff2');
+    font-weight: 600;
+}
+
+@font-face {
+    font-family: zoho_puvi;
+    src: url('../fonts/zoho_puvi_extrabold.woff2');
+    font-weight: 700;
+}
+
+/*writesContainer*/
+.writesContainer {
+    width: 100%;
+    background: #F5F5F5;
+}
+
+.container {
+    max-width: 1170px;
+    width: 100%;
+    margin: 0 auto;
+    padding-block: 50px;
+}
+
+/*header*/
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    padding-inline:10px;
+}
+
+.logo {
+    width: 156px;
+}
+
+.navMenus {
+    display: flex;
+    align-items: center;
+}
+
+.navMenu {
+    position: relative;
+
+}
+
+.buleTxt {
+    color: blue;
+}
+
+.dropdown-menu {
+    list-style: none;
+    margin: 0;
+    padding: 10px;
+    position: absolute;
+    top: 10px;
+    left: 0;
+    background-color: #fff;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    display: none;
+    z-index: 3;
+}
+
+.dropdown-menu li {
+    margin: 15px 0;
+}
+
+.dropdown-menu li a:hover {
+    color: #1305b3;
+}
+
+.dropdown-menu li a {
+    color: #333;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    white-space: nowrap;
+}
+
+.navMenu a {
+    font-size: 16px;
+    font-weight: 300;
+    padding-inline: 18px;
+}
+
+.navMenu::before {
+    position: absolute;
+    content: "";
+    border-top: 5px solid black;
+    border-left: 4px solid transparent;
+    border-right: 4px solid transparent;
+    top: -1px;
+    right: 3px;
+    transform: rotate(-360deg);
+}
+
+.navMenu:nth-child(2)::before {
+    display: none;
+}
+
+/*banner*/
+.banner {
+    width: 100%;
+    padding-block: 60px;
+}
+
+.banContent {
+    display: flex;
+    justify-content: space-between;
+    padding-inline-start: 70px;
+    padding-block-end: 100px;
+    background: #3F2EFF;
+    border-radius: 25px;
+    overflow: hidden;
+}
+
+.banText {
+    padding-block-start: 140px;
+    width: 570px;
+}
+
+h1 {
+    font-size: 58px;
+    font-weight: 600;
+    line-height: 68px;
+    color: #ffff;
+}
+
+.banText p {
+    color: #ffff;
+}
+
+p {
+    font-size: 17px;
+    font-weight: 400;
+    line-height: 30px;
+    padding-block: 10px;
+    width: 447px;
+}
+
+.btn {
+    background: #F0483E;
+    padding: 12px;
+    width: 165px;
+    height: 56px;
+    margin-block-start: 20px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: 500;
+
+}
+
+.btn:hover {
+    transition: all 1s ease;
+    background: #b40d05;
+}
+
+.btn a {
+    color: white;
+}
+
+.banImg {
+    width: 585px;
+    position: relative;
+    z-index: 0;
+}
+
+.banImg::before {
+    position: absolute;
+    content: "";
+    background: url("../img/banner-circle.png")no-repeat;
+    width: 491px;
+    height: 592px;
+    top: 0;
+    right: 0;
+    z-index: -1;
+}
+
+.banImges {
+    position: relative;
+}
+
+.banPosi {
+    display: inline-block;
+    position: absolute;
+    content: "";
+    align-content: center;
+}
+
+.banImg img {
+    padding-block-start: 200px;
+}
+
+.menu-icon {
+    width: 30px;
+    height: 30px;
+    display: none;
+    position: absolute;
+    content: "";
+    right: 15px;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    cursor: pointer;
+}
+
+.line {
+    width: 100%;
+    height: 4px;
+    background: #000;
+    margin: 4px 0;
+}
+
+/*supApps*/
+
+.supApps {
+    margin-block: 70px;
+    width: 98%;
+}
+
+.supappList {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.lists {
+    width: 50%;
+}
+
+h2 {
+    font-size: 40px;
+    font-weight: 600;
+    line-height: 42px;
+}
+
+.listsLink {
+    font-size: 18px;
+    font-weight: 400;
+    margin-block: 20px;
+    line-height: 28px;
+}
+
+.listsLink a {
+    color: #3F2EFF;
+    text-decoration: underline;
+    font-weight: 600;
+}
+
+h3 {
+    font-size: 18px;
+    font-weight: 600;
+    margin-block: 50px 20px;
+
+}
+
+.apps {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.whiteBox {
+    height: 64px;
+    background: #ffff;
+    box-shadow: 0px 0 8px 1px #e5e1e1;
+    padding: 15px;
+    margin: 7px;
+    align-content: center;
+}
+.whiteBox:hover{
+    transform: scale(1.1);
+    transition: transform 0.8s ease;
+}
+.documents {
+    padding-inline-end: 60px;
+    padding-block-end: 115px;
+}
+
+.signature {
+    padding-inline-start: 70px;
+    padding-block-end: 70px;
+}
+
+.smart {
+    padding-block-start: 70px;
+    padding-inline-end: 70px;
+
+}
+
+.smart,
+.documents {
+    border-right: 1.5px dashed black;
+
+}
+
+.audioVideo {
+    padding-block-start: 70px;
+    padding-inline-start: 70px;
+}
+
+.audioVideo,
+.smart {
+    border-top: 1.5px dashed black;
+}
+
+/*zohoWrites*/
+.zohoWrites {
+    width: 100%;
+    background: #000;
+    border-radius: 25px;
+    padding: 110px 80px;
+    color: white;
+
+}
+
+h4 {
+    font-size: 18px;
+    line-height: 28px;
+    font-weight: 600;
+    margin-block: 15px;
+}
+
+.writesList {
+    margin-block-start: 40px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.list1 {
+    width: 450px;
+    margin-inline-end: 30px;
+}
+
+.list2 {
+    width: 450px;
+}
+
+.tick {
+    position: relative;
+    font-size: 17px;
+    font-weight: 400;
+    line-height: 30px;
+    padding-inline-start: 40px;
+    margin-block: 30px;
+}
+
+.tick::before {
+    position: absolute;
+    content: "";
+    background: url("../img/tick.png")no-repeat;
+    width: 30px;
+    height: 30px;
+    background-size: cover;
+    left: 0;
+    top: 0;
+}
+
+/*footer*/
+footer {
+    text-align: center;
+    margin-block: 90px;
+}
+
+.ftrHed {
+    font-size: 62px;
+    font-weight: 600;
+    line-height: 72px;
+}
+
+@media (max-width:1170px) {
+
+    .banContent {
+        flex-direction: column;
+        padding-inline: 20px;
+    }
+
+    .banImg,
+    .banText {
+        width: 100%;
+        text-align: center;
+        margin-block-end: 50px;
+    }
+
+    p {
+        width: 100%;
+    }
+
+    .banImg::before {
+        display: none;
+    }
+
+    .banImg img {
+        padding-block: 0;
+    }
+
+    br {
+        display: none;
+    }
+}
+
+@media (max-width:992px) {
+
+    .banText {
+        padding-block-start: 50px;
+
+    }
+
+    h1 {
+        font-size: 44px;
+        line-height: 54px;
+    }
+
+    .writesList {
+        flex-direction: column;
+    }
+
+    .zohoWrites {
+        border-radius: 0;
+        padding: 50px;
+    }
+
+    .list1,
+    .list2 {
+        width: 100%;
+    }
+}
+
+@media (max-width:762px) {
+
+    .navMenu {
+        text-align: left;
+        margin: 40px 0;
+    }
+
+    .menu-icon {
+        display: block;
+    }
+
+    .navMenus {
+        flex-direction: column;
+        position: absolute;
+        top: 60px;
+        right: 0;
+        width: 100%;
+        display: none;
+    }
+    .navMenu::before {
+        display: none;
+    }
+    .navMenu a{
+        color: white;
+        font-weight: 500;
+        font-weight: 22px;
+    }
+    .active {
+        display: block;
+        background: #2348b9;
+        padding: 10px;
+        width: 100%;
+    }
+
+    .banContent {
+        border-radius: 0;
+    }
+
+    .lists {
+        width: 100%;
+        border: none;
+        padding: 0 20px;
+        margin: 20px 0;
+    }
+
+    .supApps {
+        margin-block: 50px;
+    }
+
+}
+
+@media (max-width:692px) {
+
+    .banImg img {
+
+        width: 100%;
+    }
+
+    h1 {
+        font-size: 38px;
+        line-height: 48px;
+    }
+
+    .banContent {
+        padding-inline-start: 20px;
+        padding-block-end: 0px;
+    }
+
+    h2 {
+        font-size: 28px;
+    }
+
+    .zohoWrites {
+        padding: 20px;
+    }
+
+    .tick {
+        margin-block: 20px;
+    }
+
+    footer {
+        margin-block: 40px;
+    }
+
+    .ftrHed {
+        font-size: 30px;
+        line-height: 42px;
+    }
+
+    .banner,
+    .container {
+        padding-block: 30px;
+    }
+
+}
+
+@media (max-width:462px) {
+    h1 {
+        font-size: 32px;
+        line-height: 42px;
+    }
+
+}

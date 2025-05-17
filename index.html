@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zoho Writes</title>
+    <link rel="stylesheet" href="css/zohowrites.css">
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+</head>
+
+<body>
+    <div class="writesContainer">
+        <div class="container">
+            <!--header-->
+            <header>
+                <div class="logo">
+                    <img src="img/zoho-writer.png" alt="writelogo" style="width: 100%;">
+                </div>
+                <div class="menu-icon" onclick="toggleMenu()">
+                    <div class="line"></div>
+                    <div class="line"></div>
+                    <div class="line"></div>
+                </div>
+                <nav>
+                    <ul class="navMenus">
+                        <li class="navMenu"><a href="#">Features</a>
+                            <ul class="dropdown-menu">
+                                <li><a href="#">See All Features</a></li>
+                                <li><a href="#">Writing Assitance</a></li>
+                                <li><a href="#">Collaborative Writing</a></li>
+                                <li><a href="#">Work Offline</a></li>
+                                <li><a href="#">Approval Workflows</a></li>
+                                <li><a href="#">Marge Documents</a></li>
+                                <li><a href="#">Sign Documents</a></li>
+                                <li><a href="#">Fillable Forms</a></li>
+                                <li><a href="#">Fillable PDF Forms</a></li>
+                                <li><a href="#">Documents Automation</a></li>
+                                <li><a href="#">generate Citation</a></li>
+                                <li><a href="#">For Businesses</a></li>
+                            </ul>
+                        </li>
+                        <li class="navMenu"><a href="#">Pricing</a></li>
+                        <li class="navMenu"><a href="#">Free Tools</a>
+                            <ul class="dropdown-menu">
+                                <li><a href="#">Free Grammar Checker</a></li>
+                                <li><a href="#">Free PDF Editor</a></li>
+                                <li><a href="#">Free Plagiarism Checker</a></li>
+                            </ul>
+                        </li>
+                        <li class="navMenu"><a href="#">Solutions</a>
+                            <ul class="dropdown-menu">
+                                <li><a href="#">BulePencil</a></li>
+                                <li><a href="#">ResearchStudio</a></li>
+                            </ul>
+                        </li>
+                        <li class="navMenu"><a href="#">Apps</a>
+                            <ul class="dropdown-menu">
+                                <li><a href="#">Android and iOS</a></li>
+                                <li><a href="#">Desktop Apps</a></li>
+                                <li><a href="#">Extension</a></li>
+                                <li><a href="#">Clipper</a></li>
+                            </ul>
+                        </li>
+                        <li class="navMenu"><a href="#">Resources</a>
+                            <ul class="dropdown-menu">
+                                <li><a href="#">Templates</a></li>
+                                <li><a href="#">API Docs</a></li>
+                                <li><a href="#">Integration</a></li>
+                                <li><a href="#">Developer</a></li>
+                                <li><a href="#">User Guide</a></li>
+                                <li><a href="#">Community</a></li>
+                                <li><a href="#">Knowledge Base</a></li>
+                                <li><a href="#">Blog</a></li>
+                                <li><a href="#">Blog Archive</a></li>
+                                <li><a href="#">Compatibility</a></li>
+                                <li><a href="#">What's New</a></li>
+                                <li><a href="#">Webinar</a></li>
+                                <li><a href="#">Vidoes</a></li>
+                                <li><a href="#">Training</a></li>
+                                <li><a href="#">View All</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </nav>
+            </header>
+            <!--banner-->
+            <section class="banner">
+                <div class="banContent">
+                    <div class="banText">
+                        <h1>Maximize your productivity <br> with Zoho Writer's extensions</h1>
+                        <p>Integrate with your favorite apps and execute a wide range of actions from your Zoho Writer
+                            documents with ready-to-use extensions.</p>
+                        <p>Zoho Writer offers a set of prebuilt extensions to help automate your business operations
+                            right within your documents.</p>
+                        <button class="btn"><a href="#">Explore now</a></button>
+                    </div>
+                    <div class="banImg">
+                        <div class="banImges">
+                            <img src="img/banner-img.png" alt="banimg">
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!--supApps-->
+            <section class="supApps">
+                <ul class="supappList">
+                    <!--lists-->
+                    <li class="documents lists">
+                        <h2>Publish your documents</h2>
+                        <p>Post your Writer document's content to multiple blogging and content platforms in a single
+                            click. Add a title, tags, and description to give better visibility to your posts. Schedule
+                            and update blog posts from a single window.</p>
+
+                        <div class="listsLink">Learn more about <a href="#">publishing corntent from Writer.</a> </div>
+                        <h3>Supported apps:</h3>
+                        <div class="apps">
+                            <div class="whiteBox">
+                                <img src="img/image 1.png" alt="img1">
+                            </div>
+                            <div class="whiteBox">
+                                <img src="img/image 2.png" alt="img1">
+                            </div>
+                            <div class="whiteBox">
+                                <img src="img/image 3.png" alt="img3">
+                            </div>
+                            <div class="whiteBox">
+                                <img src="img/image 4.png" alt="img4">
+                            </div>
+                            <div class="whiteBox">
+                                <img src="img/image 5.png" alt="img5">
+                            </div>
+                            <div class="whiteBox">
+                                <img src="img/image 6.png" alt="img6">
+                            </div>
+                            <div class="whiteBox">
+                                <img src="img/image 7.png" alt="img7">
+                            </div>
+                        </div>
+                    </li>
+                    <!--lists-->
+                    <!--lists-->
+                    <li class="signature lists">
+                        <h2>Collect digital signatures</h2>
+                        <p>Create various business documents, such as NDAs and sales contracts, and initiate signature
+                            collection from the same window in Zoho Writer. Add signers dynamically, define the signing
+                            method, signing order, post-signing workflows, and more with your preferred signing service.
+                            Safely and securely collect signatures and streamline business processes.</p>
+
+                        <div class="listsLink">Learn more about <a href="#">publishing corntent from Writer.</a> </div>
+                        <h3>Supported apps:</h3>
+                        <div class="apps">
+                            <div class="whiteBox">
+                                <img src="img/image 8.png" alt="img8">
+                            </div>
+                            <div class="whiteBox">
+                                <img src="img/image 9.png" alt="img9">
+                            </div>
+                            <div class="whiteBox">
+                                <img src="img/image 10.png" alt="img10">
+                            </div>
+                            <div class="whiteBox">
+                                <img src="img/image 11.png" alt="img11">
+                            </div>
+                        </div>
+                    </li>
+                    <!--lists-->
+                    <!--lists-->
+                    <li class="smart lists">
+                        <h2>Get smart content assistance</h2>
+                        <p>Access ChatGPT from within your document and get smart assistance generating content with
+                            various prebuilt prompts. Instantly add ChatGPT's responses to your document and draft
+                            various business documents, refine and summarize content, and more.</p>
+
+                        <div class="listsLink">Learn more about <a href="#">publishing corntent from Writer.</a> </div>
+                        <h3>Supported apps:</h3>
+                        <div class="apps">
+                            <div class="whiteBox">
+                                <img src="img/image 12.png" alt="img12">
+                            </div>
+                        </div>
+                    </li>
+                    <!--lists-->
+                    <!--lists-->
+                    <li class="audioVideo lists">
+                        <h2>Launch audio and video meetings</h2>
+                        <p>Initiate meetings from within the document to discuss its content with your collaborators.
+                            Schedule meetings, share your screen, record meetings, and more.</p>
+
+                        <div class="listsLink">Learn more about <a href="#">publishing corntent from Writer.</a> </div>
+                        <h3>Supported apps:</h3>
+                        <div class="apps">
+                            <div class="whiteBox">
+                                <img src="img/image 13.png" alt="img13">
+                            </div>
+                        </div>
+                    </li>
+                    <!--lists-->
+                </ul>
+            </section>
+            <!--supApps-->
+            <section class="zohoWrites">
+                <h2>The Zoho Writer advantage</h2>
+                <h4>Besides extensions, Zoho Writer offers various productivity-enhancing features:</h4>
+                <div class="writesList">
+                    <ul class="list1">
+                        <li class="tick">Real-time sharing and collaboration with your peers</li>
+                        <li class="tick">Options to insert images, tables, and fields in your documents</li>
+                        <li class="tick">Advanced formatting and layout options for designing your documents</li>
+                        <li class="tick">Built-in spelling and grammar checker, along with AI-powered writing
+                            suggestions</li>
+                    </ul>
+                    <ul class="list2">
+                        <li class="tick">Powerful automation templates to fulfill your signing, fillable, and mail merge
+                            needs</li>
+                        <li class="tick">Offline mode and a desktop app with full offline capabilities and no-signup
+                            usage</li>
+                        <li class="tick">Android and iOS apps, and full access via mobile browsers so you can work on
+                            your documents anytime</li>
+                    </ul>
+                </div>
+            </section>
+            <!--supApps-->
+            <section class="supApps">
+                <ul class="supappList">
+                    <!--lists-->
+                    <li class="documents lists">
+                        <h2>Create and manage notes for your documents</h2>
+                        <p>Create and share notes from your document or insert them directly into your document. You can
+                            also view, edit, and delete notes without moving away from the editor in Zoho Writer.</p>
+                        <div class="listsLink">Learn more about <a href="#">Zoho Notebook extension.</a> </div>
+                        <h3>Supported apps:</h3>
+                        <div class="apps">
+                            <div class="whiteBox">
+                                <img src="img/image 14.png" alt="img14">
+                            </div>
+                        </div>
+                    </li>
+                    <!--lists-->
+                    <!--lists-->
+                    <li class="signature lists">
+                        <h2>Search and add images to your documents</h2>
+                        <p>Make your content engaging and visually appealing by adding photos or graphics to your
+                            documents. Browse and insert a wide range of high-quality stock images from the gallery.</p>
+                        <h3>Supported apps:</h3>
+                        <div class="apps">
+                            <div class="whiteBox">
+                                <img src="img/image 15.png" alt="img15">
+                            </div>
+                            <div class="whiteBox">
+                                <img src="img/image 16.png" alt="img16">
+                            </div>
+                        </div>
+                    </li>
+                    <!--lists-->
+                    <!--lists-->
+                    <li class="smart lists">
+                        <h2>Insert citations</h2>
+                        <p>Create new citations or import citations from your citation manager in Zoho Writer. Build
+                            document-specific citation libraries, cite in your preferred style, insert bibliographies,
+                            and more.</p>
+                        <div class="listsLink">Learn more about <a href="#">inserting and managing citations</a> </div>
+                        <h3>Supported apps:</h3>
+                        <div class="apps">
+                            <div class="whiteBox">
+                                <img src="img/image 17.png" alt="img17">
+                            </div>
+                        </div>
+                    </li>
+                    <!--lists-->
+                    <!--lists-->
+                    <li class="audioVideo lists">
+                        <h2>Build custom extensions</h2>
+                        <p>Want an extension for your favorite app? Easily build one with Zoho Writer's extension
+                            toolkit. Build custom extensions for any purpose: post your documents to Wikipedia, generate
+                            invoices and send them to customers via Zoho Invoice, and more! Publish your extensions so
+                            that users across the globe can use the to improve their business processes.</p>
+                        <div class="listsLink">Learn more about <a href="#">developing custom extensions with Zoho
+                                Writer.</a> </div>
+                    </li>
+                    <!--lists-->
+                </ul>
+            </section>
+            <!--footer-->
+            <footer>
+                <div class="ftrHed">Get Started. Write Away!</div>
+                <button class="btn"><a href="#">Explore now</a></button>
+            </footer>
+        </div>
+    </div>
+    <script>
+        $(document).ready(function () {
+            $(".navMenu").hover(
+                function () {
+                    $(this).find(".dropdown-menu").stop(true, true).slideDown(400);
+                },
+                function () {
+                    $(this).find(".dropdown-menu").stop(true, true).slideUp(400);
+                }
+            );
+        });
+        function toggleMenu() {
+            const navLinks = document.querySelector('.navMenus');
+            navLinks.classList.toggle('active');
+        }
+    </script>
+</body>
+
+</html>
